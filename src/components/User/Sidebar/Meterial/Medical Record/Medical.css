@@ -1,0 +1,272 @@
+/* src/User/Sidebar/Metarial/Medical Record/Medical.css */
+.medical-container {
+  padding: 0;
+}
+
+.medical-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e5ee;
+}
+
+.medical-header h2 {
+  color: #1e3c72;
+  margin: 0 0 0.5rem 0;
+}
+
+.medical-header p {
+  color: #666;
+  margin: 0;
+}
+
+.medical-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-left: 4px solid #1e3c72;
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.stat-info h3 {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat-info p {
+  color: #1e3c72;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.records-section h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.records-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.record-card {
+  background: white;
+  border: 1px solid #e1e5ee;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.record-card:hover,
+.record-card.active {
+  border-color: #1e3c72;
+  box-shadow: 0 5px 15px rgba(30, 60, 114, 0.2);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.record-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.record-type {
+  background: #e7f1ff;
+  color: #1e3c72;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.record-doctor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.record-diagnosis {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.record-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-view, .btn-download {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-view {
+  background: #e7f1ff;
+  color: #1e3c72;
+}
+
+.btn-view:hover {
+  background: #d4e3ff;
+}
+
+.btn-download {
+  background: #f8f9fa;
+  color: #666;
+}
+
+.btn-download:hover {
+  background: #e9ecef;
+}
+
+.record-detail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.record-detail {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e5ee;
+}
+
+.detail-header h3 {
+  color: #1e3c72;
+  margin: 0;
+}
+
+.detail-content {
+  margin-bottom: 2rem;
+}
+
+.detail-row {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.detail-row label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.detail-row span {
+  color: #666;
+}
+
+.detail-row p {
+  color: #666;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.5;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.btn-secondary {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #e1e5ee;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #e9ecef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .medical-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .record-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .record-actions {
+    flex-direction: column;
+  }
+
+  .detail-actions {
+    flex-direction: column;
+  }
+}

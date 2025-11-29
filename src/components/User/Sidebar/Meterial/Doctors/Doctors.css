@@ -1,0 +1,280 @@
+/* src/User/Sidebar/Metarial/Doctors/Doctors.css */
+.doctors-container {
+  padding: 0;
+}
+
+.doctors-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e5ee;
+}
+
+.doctors-header h2 {
+  color: #1e3c72;
+  margin: 0 0 0.5rem 0;
+}
+
+.doctors-header p {
+  color: #666;
+  margin: 0;
+}
+
+.doctors-filters {
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.search-box i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 12px 12px 45px;
+  border: 2px solid #e1e5ee;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #1e3c72;
+}
+
+.specialty-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.specialty-btn {
+  padding: 8px 16px;
+  background: #f8f9fa;
+  border: 2px solid #e1e5ee;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.specialty-btn:hover {
+  border-color: #1e3c72;
+  color: #1e3c72;
+}
+
+.specialty-btn.active {
+  background: #1e3c72;
+  color: white;
+  border-color: #1e3c72;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.doctor-card {
+  background: white;
+  border: 1px solid #e1e5ee;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.doctor-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.doctor-image {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.doctor-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.specialty {
+  color: #1e3c72;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 0.9rem;
+}
+
+.rating span {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.doctor-details {
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.detail-item i {
+  color: #1e3c72;
+  width: 16px;
+}
+
+.doctor-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.doctor-actions .btn-primary,
+.doctor-actions .btn-secondary {
+  flex: 1;
+  padding: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.booking-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.booking-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e5ee;
+}
+
+.modal-header h3 {
+  color: #1e3c72;
+  margin: 0;
+}
+
+.doctor-summary {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.summary-image {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.summary-info h4 {
+  margin: 0 0 0.25rem 0;
+  color: #333;
+}
+
+.summary-info p {
+  margin: 0 0 0.5rem 0;
+  color: #1e3c72;
+  font-weight: 500;
+}
+
+.booking-form {
+  margin-bottom: 2rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-actions {
+    flex-direction: column;
+  }
+
+  .specialty-filters {
+    justify-content: center;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+}
