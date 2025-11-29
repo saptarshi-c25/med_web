@@ -1,0 +1,125 @@
+/* src/FrontPage/Signup/SignUp.css */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.signup-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  border: 2px solid #1e3c72;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.signup-header i {
+  font-size: 3rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.signup-header h1 {
+  color: #1e3c72;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.signup-header p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.signup-form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.signup-form .form-group i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1e3c72;
+}
+
+.signup-form .form-group input,
+.signup-form .form-group select {
+  width: 100%;
+  padding: 12px 12px 12px 45px;
+  border: 2px solid #e1e5ee;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.signup-form .form-group input:focus,
+.signup-form .form-group select:focus {
+  outline: none;
+  border-color: #1e3c72;
+  box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+}
+
+.signup-btn i {
+  margin-right: 8px;
+}
+
+.signup-footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e5ee;
+}
+
+.signup-footer a {
+  color: #1e3c72;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+/* src/FrontPage/Signup/SignUp.css */
+/* ... (keep existing styles) ... */
+
+.signup-footer .link {
+  color: #1e3c72;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup-footer .link:hover {
+  text-decoration: underline;
+}
